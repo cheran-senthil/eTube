@@ -13,8 +13,9 @@ function downloadData(url) {
   })
 }
 
-function channelRequest(id, key) {
-  let url = `https://www.googleapis.com/youtube/v3/search?key=${key}&channelId=${id}&part=snippet,id&order=date&maxResults=20`
+function channelRequest(id, key, maxResults) {
+  maxResults = maxResults || 20
+  let url = `https://www.googleapis.com/youtube/v3/search?key=${key}&channelId=${id}&part=snippet,id&order=date&maxResults=${maxResults}`
   return downloadData(url)
 }
 
