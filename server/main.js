@@ -13,6 +13,7 @@ function loadMongo() {
     videos.items.forEach((video) => {
       var videoId = video.id.videoId
       videoRequest(videoId, key).then((data) => {
+        delete data.items[0].snippet.localized
         videoDB.insert(data.items[0])
       })
     })
