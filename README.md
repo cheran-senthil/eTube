@@ -10,7 +10,7 @@ A web application to search and recommend videos within a specified range of cha
 ## Usage
 
 1. Create a YouTube API key by following the steps listed [here](https://developers.google.com/youtube/android/player/register)
-2. Enter your API key in the key variable at server/main.js
+2. Enter your API key at the variable `key` in server/main.js
 3. Run the `meteor` command
 
 ## Status
