@@ -1,6 +1,6 @@
 import { Meteor } from 'meteor/meteor';
 import { video_data } from '../lib/collections.js';
-import { channelRequest, videoRequest } from './youtube-api'
+import { channelRequest, videoRequest } from '../lib/youtube-api'
 
 function loadMongo() {
   video_data.remove({})
