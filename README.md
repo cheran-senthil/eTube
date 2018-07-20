@@ -6,6 +6,7 @@ A web application to search and recommend videos within a specified range of cha
 
 - Node.js
 - Meteor
+- Neo4j
 
 ## Usage
 
