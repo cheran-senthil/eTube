@@ -1,20 +1,18 @@
 import { Meteor } from 'meteor/meteor';
-import { Mongo } from 'meteor/mongo';
+import { video_data } from '../lib/collections.js';
 import { channelRequest, videoRequest } from './youtube-api'
 
 function loadMongo() {
-  const videoDB = new Mongo.Collection('videodb')
-  videoDB.remove({})
+  video_data.remove({})
 
   let key = ''
   var channels = 'UCHnyfMqiRRG1u-2MsSQLbXA' // Veritasium
 
-  channelRequest(channels, key, 100).then((videos) => {
-    videos.items.forEach((video) => {
-      var videoId = video.id.videoId
-      videoRequest(videoId, key).then((data) => {
+  channelRequest(channels, key, 2).then((videos) => {
+    videos.items.forEach(video => {
+      videoRequest(video.id.videoId, key).then((data) => {
         delete data.items[0].snippet.localized
-        videoDB.insert(data.items[0])
+        video_data.insert(data.items[0])
       })
     })
   })
