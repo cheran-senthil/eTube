@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/Cheran-Senthil/eTube.svg?branch=master)](https://travis-ci.com/Cheran-Senthil/eTube)
+
 # eTube
 
 A web application to search and recommend videos within a specified range of channels for easy access.
