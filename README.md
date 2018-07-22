@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.com/Cheran-Senthil/eTube.svg?branch=master)](https://travis-ci.com/Cheran-Senthil/eTube)
+[![CodeFactor](https://www.codefactor.io/repository/github/cheran-senthil/etube/badge)](https://www.codefactor.io/repository/github/cheran-senthil/etube)
 
 # eTube
 
