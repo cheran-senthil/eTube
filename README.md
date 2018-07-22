@@ -21,7 +21,7 @@ A web application to search and recommend videos within a specified range of cha
 This is a ground up implementation of [Video-Search-Engine](https://github.com/Cheran-Senthil/Video-Search-Engine) and is still in progress.
 
 - [x] Load data into MongoDB
-- [ ] Load data into Neo4j
-- [ ] Create backend for log-in
-- [ ] Implement recommendations and search engine
-- [ ] Create webpages
+- [x] Load data into Neo4j
+- [x] Add log-in support
+- [x] Implement recommendations and search engine
+- [ ] Create Front-end
