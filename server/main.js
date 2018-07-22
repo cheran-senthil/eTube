@@ -41,9 +41,9 @@ function loadNeo4j(host, user, pass) {
       commonTitle = _.intersection(video1.title.split(' '),
         video2.title.split(' ')).length
 
-      sameChannel = (video1.channelId == video2.channelId)
+      sameChannel = (video1.channelId == video2.channelId) + 0.5
 
-      weight = commonTags + commonTitle + commonDesc + sameChannel
+      weight = sameChannel * ((100 * commonTitle) + (50 * commonTags) + commonDesc)
 
       node1.to(node2, "link", { weight: weight })
       node1.from(node2, "link", { weight: weight })
