@@ -22,6 +22,5 @@ This is a ground up implementation of [Video-Search-Engine](https://github.com/C
 
 - [x] Load data into MongoDB
 - [x] Load data into Neo4j
-- [x] Add log-in support
 - [x] Implement recommendations and search engine
 - [ ] Create Front-end
