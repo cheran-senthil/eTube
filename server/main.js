@@ -19,7 +19,7 @@ function loadMongo(key, channels) {
 
 function loadNeo4j(host, user, pass) {
   let db = new Neo4jDB(host, { username: user, password: pass });
-  db.nodes().delete()
+  db.query("MATCH (n) DETACH DELETE n").fetch()
 
   var nodes = []
   for (let video of videoData.find({}).fetch()) {
