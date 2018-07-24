@@ -24,3 +24,4 @@ ostrio:neo4jdriver
 accounts-google
 accounts-github
 react-meteor-data
+kadira:flow-router
