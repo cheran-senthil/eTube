@@ -1,7 +1,11 @@
 import React from 'react'
 
 const App = props => {
-  return props.content
+  return (
+    <div>
+      {props.content}
+    </div>
+  )
 }
 
 export default App

@@ -5,7 +5,7 @@ export default class VideoInfo extends Component {
     var thumbnail = this.props.info.thumbnails.default.url
     var title = this.props.info.title
     var link = '/video?id=' + this.props.info.id
-    return <li><a href={link}><img src={thumbnail} />{title}</a></li>;
+    return <li className="videoInfo"><a href={link}><img src={thumbnail} />{title}</a></li>;
   }
 }
 
