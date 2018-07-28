@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import { withTracker } from 'meteor/react-meteor-data';
 
 const Video = (params) => {
-  console.log(params)
   var id = params.id
   return (
     <div className="videoContainer">
