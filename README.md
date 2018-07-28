@@ -19,9 +19,6 @@ A web application to search and recommend videos within a specified range of cha
 
 ## Status
 
-This is a ground up implementation of [Video-Search-Engine](https://github.com/Cheran-Senthil/Video-Search-Engine) and is still in progress.
+This is a ground up re-implementation of [Video-Search-Engine](https://github.com/Cheran-Senthil/Video-Search-Engine). 
 
-- [x] Load data into MongoDB
-- [x] Load data into Neo4j
-- [x] Create Front-end
-- [ ] Implement recommendations and search engine
+The front-end for the search-engine and recommendations are still under construction.
