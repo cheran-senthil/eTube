@@ -3,7 +3,7 @@ import { Neo4jDB } from 'meteor/ostrio:neo4jdriver'
 import { _ } from 'meteor/underscore'
 
 import { channelRequest, getVideoInfo } from '/imports/api/youtube-api'
-import { videoData } from '/lib/collections'
+import { videoData } from '/imports/api/videoData'
 
 function loadMongo (key, channels) {
   videoData.remove({})

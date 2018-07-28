@@ -4,7 +4,7 @@ const Video = (params) => {
   var id = params.id
   return (
     <div className="videoContainer">
-      <iframe src={'https://www.youtube.com/embed/'+id} frameBorder="0" allowFullScreen></iframe>
+      <iframe src={'https://www.youtube.com/embed/'+id+'?rel=0'} frameBorder="0" allowFullScreen></iframe>
     </div>
   )
 }

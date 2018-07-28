@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
 
-import { videoData } from '/lib/collections'
+import { videoData } from '/imports/api/videoData'
 import VideoInfo from './VideoInfo'
 
 class Index extends Component {
