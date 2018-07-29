@@ -18,29 +18,47 @@
 }
 
 html {
-	background: var(--base01);
-	margin: 0 0 0 0;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
+	background: var(--base00);
+	color: var(--base05);
 }
 
 iframe {
 	display: block;
 	width: 64vw;
 	height: 36vw;
-	margin-left: 3vw;
-	margin-right: 3vw;
-	margin-top: 2vw;
-	margin-bottom: 2vw;
+	padding: 2.5vw 2.5vw 2.5vw 2.5vw;
+}
+
+.container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
 }
 
 .videoContainer {
 	position: absolute;
 	border-radius: 10px;
 	top: 1vw;
+	right: 15vw;
+	left: 15vw;
+	background: var(--base02);
+	display: block;
+}
+
+.description {
+	white-space: pre-line;
+
+	position: absolute;
+	top: 43vw;
 	left: 15vw;
 	right: 15vw;
-	background: var(--base00);
+	padding: 2.5vw 2.5vw 2.5vw 2.5vw;
+	margin-bottom: 1vw;
+
+	display: block;
+	border-radius: 10px;
+	text-align: justify;
+
+	background: var(--base02);
 }

@@ -7,4 +7,8 @@ if (Meteor.isServer) {
   Meteor.publish('videoData', () => {
     return videoData.find({})
   })
+
+  Meteor.publish('videoInfo', id => {
+    return videoData.find({id: id})
+  })
 }
