@@ -1,12 +1,11 @@
-import React from 'react';
-import { Meteor } from 'meteor/meteor';
-import { render } from 'react-dom';
+import React from 'react'
+import { Meteor } from 'meteor/meteor'
+import { render } from 'react-dom'
 
-import App from '../imports/ui/App.js';
-import { videoData } from '../lib/collections.js';
+import App from '../imports/ui/App.js'
 
-import './main.html';
+import './main.html'
 
 Meteor.startup(() => {
-  render(<App />, document.getElementById('render-target'));
-});
+  render(<App />, document.getElementById('render-target'))
+})
