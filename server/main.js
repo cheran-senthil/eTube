@@ -59,7 +59,7 @@ function loadNeo4j (host, user, pass) {
 }
 
 Meteor.startup(() => {
-  let key = ''
+  let key = 'AIzaSyBkFXmCJ5XPvwbEdNqIWxrag0qbc-RI1cI'
   var channels = 'UCHnyfMqiRRG1u-2MsSQLbXA' // Veritasium
 
   loadMongo(key, channels)
