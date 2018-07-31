@@ -42,7 +42,7 @@ iframe {
 	top: 1vw;
 	right: 15vw;
 	left: 15vw;
-	background: var(--base02);
+	background: var(--base01);
 	display: block;
 }
 
@@ -60,5 +60,9 @@ iframe {
 	border-radius: 10px;
 	text-align: justify;
 
-	background: var(--base02);
+	background: var(--base01);
+}
+
+.description::-moz-selection {
+	background: var(--base03);
 }
