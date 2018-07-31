@@ -1,12 +1,21 @@
 import React from 'react';
-import { Meteor } from 'meteor/meteor';
-import { render } from 'react-dom';
+import { FlowRouter } from 'meteor/kadira:flow-router';
+import { mount } from 'react-mounter';
 
-import App from '../imports/ui/App.js';
-import { videoData } from '../lib/collections.js';
+import App from '/imports/ui/App'
+import Index from '/imports/ui/Index'
+import Video from '/imports/ui/Video'
 
-import './main.html';
+FlowRouter.route('/', {
+  name: 'index',
+  action () {
+    mount(App, { content: <Index /> })
+  }
+});
 
-Meteor.startup(() => {
-  render(<App />, document.getElementById('render-target'));
+FlowRouter.route('/video', {
+  name: 'video',
+  action (params, queryParams) {
+    mount(App, { content: <Video id={queryParams.id} /> })
+  }
 });
