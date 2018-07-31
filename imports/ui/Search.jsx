@@ -1,10 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 export default class Results extends Component {
-  render() {
+  render () {
     return (
       <li>{this.props.result.title}</li>
-    );
+    )
   }
 }
-
