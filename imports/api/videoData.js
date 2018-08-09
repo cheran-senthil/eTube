@@ -11,4 +11,8 @@ if (Meteor.isServer) {
   Meteor.publish('videoInfo', id => {
     return videoData.find({id: id})
   })
+
+  Meteor.publish('videoSearch', query => {
+    return videoData.find({ $text: { $search: query } })
+  })
 }

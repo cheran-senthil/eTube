@@ -9,12 +9,17 @@ function loadMongo (key, channels) {
   videoData.remove({})
 
   var video
-  for (let id of channelRequest(channels, key, 10).map(x => x.id.videoId)) {
+  for (let id of channelRequest(channels, key).map(x => x.id.videoId)) {
     video = getVideoInfo(id, key)[0].snippet
     video.id = id
     delete video.localized
     videoData.insert(video)
   }
+
+  videoData.rawCollection().createIndex(
+    {title: 'text', description: 'text'},
+    {weights: {title: 10, description: 1}}
+  )
 }
 
 function loadNeo4j (host, user, pass) {
